@@ -1,0 +1,6 @@
+FluentModulo/bin
+FluentModulo/obj
+FluentModulo.Tests/bin
+FluentModulo.Tests/obj
+packages
+*.suo
