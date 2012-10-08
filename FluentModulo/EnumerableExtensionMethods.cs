@@ -14,7 +14,7 @@ namespace FluentModulo
                 throw new ArgumentNullException("source");
 
             if (every == 0)
-                throw new ArgumentException("each");
+                throw new ArgumentException("every");
 
             if (action == null)
                 throw new ArgumentNullException("action");
@@ -31,12 +31,12 @@ namespace FluentModulo
                 throw new ArgumentNullException("source");
 
             if (every == 0)
-                throw new ArgumentException("each");
+                throw new ArgumentException("every");
 
-            var index = 0;
+            var index = 1;
             foreach (var item in source)
             {
-                if (index % every == 0)
+                if (index > 0 && index % every == 0)
                     yield return item;
 
                 index++;

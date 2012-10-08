@@ -1,6 +1,6 @@
-FluentModulo/bin
-FluentModulo/obj
-FluentModulo.Tests/bin
-FluentModulo.Tests/obj
+*/bin
+*/obj
 packages
 *.suo
+*.ncrunch*
+*/_NCrunch_*
