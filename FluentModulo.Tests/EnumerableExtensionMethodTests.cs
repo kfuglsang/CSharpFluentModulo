@@ -11,18 +11,44 @@ namespace FluentModulo.Tests
     public class EnumerableExtensionMethodTests
     {
         [Test]
-        public void NullSourceThrowsArgumentException()
+        public void EmptyInputYieldsNoResults()
         {
-            IEnumerable<int> source = null;
-            Assert.Throws<ArgumentNullException>(() => source.Every(3));
+            var inputList = new List<int>()
+            {
+            };
+
+            var expected = new List<int> { };
+            var actual = inputList.Every(1);
+
+            CollectionAssert.AreEqual(expected, actual);
         }
 
         [Test]
-        public void EveryZeroElementThrowsArgumentException()
+        public void EveryItemIsOutput()
         {
-            IEnumerable<int> source = new List<int> { 1, 2, 3 };
-            
-            Assert.Throws<ArgumentException>(() => source.Every(0));
+            var inputList = new List<int>()
+            {
+                1,2,3,4,5,6,7,8,9,10
+            };
+
+            var expected = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            var actual = inputList.Every(1);
+
+            CollectionAssert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void EverySecondItemIsOutput()
+        {
+            var inputList = new List<int>()
+            {
+                1,2,3,4,5,6,7,8,9,10
+            };
+
+            var expected = new List<int> { 2, 4, 6, 8, 10 };
+            var actual = inputList.Every(2);
+
+            CollectionAssert.AreEqual(expected, actual);
         }
 
         [Test]
