@@ -13,7 +13,7 @@ namespace FluentModulo
             if (source == null)
                 throw new ArgumentNullException("source");
 
-            if (every == 0)
+            if (every <= 0)
                 throw new ArgumentException("every");
 
             if (action == null)
