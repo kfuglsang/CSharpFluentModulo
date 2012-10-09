@@ -36,7 +36,7 @@ namespace FluentModulo
             var index = 1;
             foreach (var item in source)
             {
-                if (index > 0 && index % every == 0)
+                if (index % every == 0)
                     yield return item;
 
                 index++;
