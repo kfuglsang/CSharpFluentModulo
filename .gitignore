@@ -4,3 +4,4 @@ packages
 *.suo
 *.ncrunch*
 */_NCrunch_*
+*.user
