@@ -11,11 +11,16 @@ namespace FluentModulo.Tests
     public class EnumerableExtensionMethodTests
     {
         [Test]
+        public void ZeroEveryArgumentThrowsArgumentException()
+        {
+            var inputList = new List<int>();
+            Assert.Throws<ArgumentException>(() => inputList.Every(0));
+        }
+
+        [Test]
         public void EmptyInputYieldsNoResults()
         {
-            var inputList = new List<int>()
-            {
-            };
+            var inputList = new List<int>();
 
             var expected = new List<int> { };
             var actual = inputList.Every(1);
