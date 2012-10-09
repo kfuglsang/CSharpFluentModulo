@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentModulo", "FluentModulo.csproj", "{39D44AA7-41CD-4360-8B06-D8EB079385DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentModulo", "FluentModulo\FluentModulo.csproj", "{39D44AA7-41CD-4360-8B06-D8EB079385DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentModulo.Tests", "..\FluentModulo.Tests\FluentModulo.Tests.csproj", "{B55CC8F4-16DA-4199-B190-C67BDFAC5037}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentModulo.Tests", "FluentModulo.Tests\FluentModulo.Tests.csproj", "{B55CC8F4-16DA-4199-B190-C67BDFAC5037}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8BF5577C-0D78-404A-8ACC-E0E49CFFA59D}"
 	ProjectSection(SolutionItems) = preProject
