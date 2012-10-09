@@ -14,7 +14,7 @@ namespace FluentModulo.Tests
         public void ZeroEveryArgumentThrowsArgumentException()
         {
             var inputList = new List<int>();
-            Assert.Throws<ArgumentException>(() => inputList.Every(0));
+            Assert.Throws<ArgumentException>(() => inputList.Every(0).ToList());
         }
 
         [Test]
